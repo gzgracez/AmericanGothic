@@ -1,5 +1,5 @@
 {
-  "name": "TCAGE",
+  "name": "tcage",
   "version": "1.0.0",
   "description": "The Contemporary American Gothic Experience",
   "main": "server.js",
