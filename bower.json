@@ -1,0 +1,24 @@
+{
+  "name": "tcage",
+  "description": "The Contemporary American Gothic Experience",
+  "main": "server.js",
+  "authors": [
+    "Grace Zhang"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/gzgracez/AmericanGothic",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6",
+    "bootstrap-material-design": "~0.5.7"
+  }
+}
