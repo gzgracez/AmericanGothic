@@ -1,9 +1,10 @@
-     $(window).load(function(){    
-         
-           $('#introtitle').click(function(){ 
-                $('#introtitle').slideUp(1234,function(){
-                   $(this).remove();
-                });
-            }); 
-     
-     }); //window
+  $(document).ready(function(){
+        $('body').plusAnchor({
+            easing: 'easeInOutQuart',      // String: Anything other than "swing" or "linear" requires the easing.js plugin
+            offsetTop: -20,       // Int: Top offset for anchor scrollto position. Can be positive or negative
+            speed: 500,          // Int: The speed, in miliseconds, it takes to complete a slide
+            onInit: null,         // Function: Callback function on plugin initialize
+            onSlide: null,        // Function: Callback function that runs just before the page starts animating
+            performance: true    // Boolean: Toggles between click and delegate events.
+        });
+  });
