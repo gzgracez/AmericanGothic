@@ -55,6 +55,10 @@ app.get('/television', function (req, res) {
   res.render('television', {title: 'Television'});
 });
 
+app.get('/photography', function (req, res) {
+  res.render('photography', {title: 'Photography'});
+});
+
 app.get('/exhibit', function (req, res) {
   res.render('exhibit', {title: 'Exhibit Information'});
 });
