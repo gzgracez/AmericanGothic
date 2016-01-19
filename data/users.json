@@ -31,9 +31,11 @@
     "username": "test",
     "password": "test",
     "firstName": "Test",
-    "lastName": "IngEDIT",
+    "lastName": "Ing",
     "email": "test@test.com",
-    "clubs_member": [0],
+    "clubs_member": [
+      0
+    ],
     "clubs_leader": []
   }
 ]
