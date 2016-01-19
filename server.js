@@ -51,6 +51,14 @@ app.get('/about', function (req, res) {
   res.render('about', {title: 'About TCAGE'});
 });
 
+app.get('/television', function (req, res) {
+  res.render('television', {title: 'Television'});
+});
+
+app.get('/exhibit', function (req, res) {
+  res.render('exhibit', {title: 'Exhibit Information'});
+});
+
 app.get('/editaccount', function (req, res) {
   if (req.session.user)
     res.render('account/editaccount', {title: 'Edit Account'});
