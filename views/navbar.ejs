@@ -11,6 +11,7 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="<%= (title=='The Contemporary American Gothic Experience Home' || title=='Login' || title=='Register') ? 'active' : ''%>"><a href="/" class="cNavbar" id="navHome">TCAGE</a></li>
+        <li class="<%= title=='About' ? 'active' : ''%>"><a href="/about" class="cNavbar" id="about">About</a></li>
         <li class="<%= title=='Schedule' ? 'active' : ''%> dropdown"><a href="#" class="cNavbar dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="schedule">Schedule <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/schedule">View Schedule</a></li>

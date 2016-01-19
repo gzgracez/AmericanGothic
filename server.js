@@ -47,6 +47,10 @@ app.get('/myaccount', function (req, res) {
     res.render('notLoggedIn', {title: 'My Account'});
 });
 
+app.get('/about', function (req, res) {
+  res.render('about', {title: 'About TCAGE'});
+});
+
 app.get('/editaccount', function (req, res) {
   if (req.session.user)
     res.render('account/editaccount', {title: 'Edit Account'});
@@ -263,7 +267,7 @@ app.put('/clubs/:id/request',function(req,res) {
 });
 
 app.use(function(req, res, next){
-  res.status(404).render('404', {title: "404 page not found"});
+  res.status(404).render('404', {title: "404 Not Found"});
 });
 
 var server = app.listen(process.env.PORT || 4000, function() {
