@@ -11,10 +11,10 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="<%= (title=='The Contemporary American Gothic Experience Home' || title=='Login' || title=='Register') ? 'active' : ''%>"><a href="/" class="cNavbar" id="navHome">TCAGE</a></li>
-        <li class="<%= title=='About' ? 'active' : ''%> dropdown"><a href="/about" class="cNavbar dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="about">About <span class="caret"></span></a>
+        <li class="<%= (title=='About TCAGE' || title=='Exhibit Information') ? 'active' : ''%> dropdown"><a href="/about" class="cNavbar dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="about">About <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li class="<%= title=='About' ? 'active' : ''%>"><a href="/about" class="cNavbar" id="about">General</a></li>
-            <li class="<%= title=='Exhibit' ? 'active' : ''%>"><a href="/exhibit" class="cNavbar" id="exhibit">Exhibit Information</a></li>
+            <li><a href="/about">General</a></li>
+            <li><a href="/exhibit">Exhibit Information</a></li>
           </ul>
         </li>
         <li class="<%= title=='Schedule' ? 'active' : ''%> dropdown"><a href="#" class="cNavbar dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="schedule">Schedule <span class="caret"></span></a>

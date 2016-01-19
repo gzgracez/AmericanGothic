@@ -13,10 +13,16 @@ $black: #1E1E1E;
 $lighterblack: #4E4E4E;
 $lighterNavy: #0000d3;
 $yellow: #dcdd63;
-$gray: #F8F8F8;
-$navBackgroundColor: #FFE4C4;
-$navHoverGray: #777;
-$navTextBlack: #000;
+$gray: #F8F8F8; //page background
+// $navBackgroundColor: #FFE4C4;
+$navBackgroundColor: #332524;
+$navBackgroundColor2: #5E6666;
+// $navHoverGray: #777;
+$navHoverGray: #B1B1B1;
+// $navTextBlack: #000;
+$navTextBlack: #D2D2D2;
+// $navTextBlack: #FFE4C7;
+$navActive: #707070;
 $green: #1f6300;
 $red: red;
 
@@ -96,7 +102,8 @@ nav {
 }
 
 .navbar-default {
-  background-color:$navBackgroundColor;
+  // background-color:$navBackgroundColor;
+  background: linear-gradient(to bottom right, $navBackgroundColor, $navBackgroundColor2);
   .navbar-toggle {
       border-color: #729de1;
       :focus, :hover {
@@ -120,6 +127,10 @@ nav {
 
 .navbar-default .navbar-nav>.active>a:hover {
     color: $navHoverGray;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  background-color: $navActive;
 }
 
 p, a, li, label{
