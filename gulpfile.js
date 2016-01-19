@@ -19,7 +19,8 @@ gulp.task('css', function() { 
                  './static/css',
                  paths.bowerDir + '/bootstrap-sass/assets/stylesheets',
                  paths.bowerDir + '/bootstrap-material-design/sass',
-             ]
+                 paths.bowerDir + '/animate-sass',
+             ];
          }) 
             
          .pipe(gulp.dest('./static/css')); 
