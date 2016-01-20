@@ -183,6 +183,13 @@ app.get('/schedule',function(req,res) {
     res.render('notLoggedIn', {title: 'Schedule'});
 });
 
+app.get('/schedulevisit',function(req,res) {
+  if (req.session.user)
+    res.render('schedulevisit', {title: 'Schedule Visit'});
+  else
+    res.render('notLoggedIn', {title: 'Schedule Visit'});
+});
+
 app.get('/users',function(req,res) {
   var users = fs.readFileSync('data/users.json', 'utf8');
   res.send(users);
