@@ -11,11 +11,18 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="<%= (title=='The Contemporary American Gothic Experience Home' || title=='Login' || title=='Register') ? 'active' : ''%>"><a href="/" class="cNavbar" id="navHome">TCAGE</a></li>
-          <li class="<%= (title=='About TCAGE') ? 'active' : ''%> dropdown"><a href="/about">About</a></li>
-          <li class="<%= (title=='Photography') ? 'active' : ''%> dropdown"><a href="/photography">Photography</a></li>
-          <li class="<%= (title=='Television Shows and Movies') ? 'active' : ''%> dropdown"><a href="/tvmovies">TV and Movies</a></li>
+          <li class="<%= (title=='About TCAGE') ? 'active' : ''%>"><a href="/about">About</a></li>
+          <li class="<%= (title=='Photography' || title=='Exhibit Information') ? 'active' : ''%> dropdown"><a href="/photography" class="cNavbar dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="about">Photography <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/photography">Photography</a></li>
+              <li><a href="/crewdsongallery">Crewdson</a></li>
+              <li><a href="/shermangallery">Sherman</a></li>
+              <li><a href="/walkergallery">Walker</a></li>
+            </ul>
+          </li>
+          <li class="<%= (title=='Television Shows and Movies') ? 'active' : ''%>"><a href="/tvmovies">TV and Movies</a></li>
         </li>
-        <li class="<%= (title=='Schedule') ? 'active' : ''%> dropdown"><a href="/schedule">Schedule</a></li>
+        <li class="<%= (title=='Schedule') ? 'active' : ''%>"><a href="/schedule">Schedule</a></li>
       </ul>
     </div>
   </div>
