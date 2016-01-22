@@ -288,6 +288,10 @@ h2 {
   font-weight: 600;
 }
 
+p {
+  font-weight: 600;
+}
+
 .description {
   font-size: 20px;
   line-height: 1.6;
@@ -299,4 +303,12 @@ h2 {
 
 .pagetitle {
   color: $black;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.artinfo {
+  font-weight: 300;
 }
