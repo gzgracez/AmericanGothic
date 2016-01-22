@@ -59,6 +59,18 @@ app.get('/photography', function (req, res) {
   res.render('photography', {title: 'Photography'});
 });
 
+app.get('/crewdsongallery', function (req, res) {
+  res.render('crewdsongallery', {title: 'Gregory Crewdson Gallery'});
+});
+
+app.get('/shermangallery', function (req, res) {
+  res.render('shermangallery', {title: 'Cindy Sherman Gallery'});
+});
+
+app.get('/walkergallery', function (req, res) {
+  res.render('walkergallery', {title: 'Kara Walker Gallery'});
+});
+
 app.get('/exhibit', function (req, res) {
   res.render('exhibit', {title: 'Exhibit Information'});
 });
