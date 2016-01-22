@@ -7,4 +7,10 @@
             onSlide: null,        // Function: Callback function that runs just before the page starts animating
             performance: true    // Boolean: Toggles between click and delegate events.
         });
+        if ( ($(window).height() + 100) < $(document).height() ) {
+            $('#top-link-block').removeClass('hidden').affix({
+                // how far to scroll down before link "slides" into view
+                offset: {top:100}
+            });
+        }
   });
