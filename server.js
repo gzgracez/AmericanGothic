@@ -71,6 +71,10 @@ app.get('/walkergallery', function (req, res) {
   res.render('walkergallery', {title: 'Kara Walker Gallery'});
 });
 
+app.get('/citations', function (req, res) {
+  res.render('citations', {title: 'Citations'});
+});
+
 app.get('/exhibit', function (req, res) {
   res.render('exhibit', {title: 'Exhibit Information'});
 });
