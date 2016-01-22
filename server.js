@@ -30,7 +30,7 @@ app.use(function(err, req, res, next) {
 });
 
 app.get('/', function (req, res) {
-  res.render('index', {title: 'The Contemporary American Gothic Experience Home'});
+  res.render('index', {title: 'The Contemporary American Gothic Experience'});
 });
 
 app.get('/dashboard', function (req, res) {
