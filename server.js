@@ -177,10 +177,7 @@ app.get('/logout',function(req,res) {
 });
 
 app.get('/schedule',function(req,res) {
-  if (req.session.user)
-    res.render('schedule', {title: 'Schedule'});
-  else
-    res.render('notLoggedIn', {title: 'Schedule'});
+  res.render('schedule', {title: 'Schedule'});
 });
 
 app.get('/schedulevisit',function(req,res) {
