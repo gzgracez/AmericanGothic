@@ -11,27 +11,11 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="<%= (title=='The Contemporary American Gothic Experience Home' || title=='Login' || title=='Register') ? 'active' : ''%>"><a href="/" class="cNavbar" id="navHome">TCAGE</a></li>
-        <li class="<%= (title=='About TCAGE' || title=='Exhibit Information') ? 'active' : ''%> dropdown"><a href="/about" class="cNavbar dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="about">About <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/about">General</a></li>
-            <li role="presentation" class="divider"></li>
-            <li><a href="/photography">Photography</a></li>
-            <li><a href="/tvmovies">TV and Movies</a></li>
-          </ul>
+          <li class="<%= (title=='About TCAGE') ? 'active' : ''%> dropdown"><a href="/about">About</a></li>
+          <li class="<%= (title=='Photography') ? 'active' : ''%> dropdown"><a href="/photography">Photography</a></li>
+          <li class="<%= (title=='Television Shows and Movies') ? 'active' : ''%> dropdown"><a href="/tvmovies">TV and Movies</a></li>
         </li>
-        <li class="<%= title=='Schedule' ? 'active' : ''%> dropdown"><a href="#" class="cNavbar dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="schedule">Schedule <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/schedule">View Schedule</a></li>
-            <li><a href="/schedulevisit">Schedule a Visit</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="<%= title=='My Dashboard' ? 'active' : ''%>"><a href="/dashboard" class="cNavbar" id="navDashboard">Dashboard</a></li>
-        <li class="<%= (title=='My Account' || title=='Edit Account') ? 'active' : ''%>"><a href="/myaccount" class="cNavbar" id="navAccount">My Account</a></li>
-        <% if (session.user) {%>
-            <li><a href="/logout" class="cNavbar">Logout</a></li>
-        <% } %>
+        <li class="<%= (title=='Schedule') ? 'active' : ''%> dropdown"><a href="/schedule">Schedule</a></li>
       </ul>
     </div>
   </div>

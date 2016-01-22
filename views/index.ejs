@@ -11,28 +11,10 @@
       </div>
     <% } %>
   <% } %>
-
-  <% if(session.user == null){ %>
+  
   <br>
   <blockquote><p>We live in Gothic times</p><footer>Angela Carter</footer></blockquote>
   <br>
-  <form method="post" action="/login">
-    <div class="form-group">
-      <label for="name">Username:</label>
-      <input type="text" id="lusername" name="lUser[username]" placeholder="Username" class="form-control"><br>
-      <label for="name">Password:</label>
-      <input type="password" id="lpassword" name="lUser[password]" placeholder="Password" class="form-control"><br>
-      <input class="btn btn-primary" class="form-control" type="submit" id="login"value="Login">
-    </div>
-  </form>
-  <br>
-  <p>Register <a href="/register" class="href">here</a> for an account if you do not have one already!</p>
-  <% } else { %>
-    <h2>Welcome, <%= session.user.firstName %> <%= session.user.lastName %>!</h2>
-    <br>
-    <blockquote><p>We live in Gothic times</p><footer>Angela Carter</footer></blockquote>
-    <br>
-    <p>Learn more about <a href="/about">The Contemporary American Gothic Experience</a>!</p>
-    <p>Dive into each of our <a href="/exhibit">exhibits</a>!</p>
-  <% } %>
+  <p>Learn more about <a href="/about">The Contemporary American Gothic Experience</a>!</p>
+  <p>Dive into each of our <a href="/exhibit">exhibits</a>!</p>
 <% include footer %>
