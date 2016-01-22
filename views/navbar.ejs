@@ -14,7 +14,10 @@
         <li class="<%= (title=='About TCAGE' || title=='Exhibit Information') ? 'active' : ''%> dropdown"><a href="/about" class="cNavbar dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="about">About <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/about">General</a></li>
-            <li><a href="/exhibit">Exhibit Information</a></li>
+            <li role="presentation" class="divider"></li>
+            <li><a href="/photography">Photography</a></li>
+            <li><a href="/television">Television</a></li>
+            <li><a href="/movies">Movies</a></li>
           </ul>
         </li>
         <li class="<%= title=='Schedule' ? 'active' : ''%> dropdown"><a href="#" class="cNavbar dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="schedule">Schedule <span class="caret"></span></a>
