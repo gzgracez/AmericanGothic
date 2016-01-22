@@ -51,8 +51,8 @@ app.get('/about', function (req, res) {
   res.render('about', {title: 'About TCAGE'});
 });
 
-app.get('/television', function (req, res) {
-  res.render('television', {title: 'Television'});
+app.get('/tvmovies', function (req, res) {
+  res.render('tvmovies', {title: 'Television Shows and Movies'});
 });
 
 app.get('/photography', function (req, res) {
