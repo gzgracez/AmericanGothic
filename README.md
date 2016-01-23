@@ -1,2 +1,1 @@
-# AmericanGothic
-The Contemporary American Gothic Experience
+# The Contemporary American Gothic Experience
